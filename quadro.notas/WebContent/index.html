@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quadro de Notas</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+</head>
+
+<body>
+    <h1>Escola do Tio</h1>
+    <fieldset>
+        <legend>Cadastrar Notas</legend>
+
+        <form action="aluno/cadastrar" method="post">
+            <div class="form-row align-items-center">
+                <div class="col-sm-4">
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome" class="form-control"
+                        placeholder="Informe o nome do aluno" />
+                </div>
+                <div class="col-sm-4">
+                    <label for="p1">Nota da P1</label>
+                    <input type="number" name="p1" id="p1" min="0" class="form-control" max="10" step="0.1" />
+                </div>
+                <div class="col-sm-4">
+                    <label for="p2">Nota da P1</label>
+                    <input type="number" name="p2" id="p2" min="0" max="10" class="form-control" step="0.1" />
+                </div>
+            </div>
+            <button class="btn btn-success mt-2">Cadastrar</button>
+        </form>
+    </fieldset>
+    <fieldset>
+        <legend>cadastrar Notas</legend>
+        <form action="aluno/consular" method="get">
+            <div class="input-group">
+                <label for="nome">Nome do Aluno:</label>
+                <input class="form-control" type="text" name="nome" id="nome" placeholder="Informe o nome do aluno" />
+            </div>
+            <button class="btn btn-success mt-2">Consultar</button>
+        </form>
+    </fieldset>
+
+</body>
+
+</html>
